@@ -16,18 +16,8 @@
         body {
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            width: 90%;
+            width: 100%;
             margin: auto;
-        }
-
-        .leftSection {
-            width: 60%;
-            float: left;
-        }
-
-        .rightSection {
-            width: 40%;
-            float: left;
         }
 
         .textColor1 {
@@ -47,12 +37,16 @@
             text-decoration: underline;
         }
 
+        .imageContainer:hover .imageDescription{
+            overflow: visible;
+        }
+
         .imageGallery {
             border: none;
         }
 
         .imageGallery img {
-            width: 60%;
+            max-width: 60%;
             height: auto;
             margin-left: 20%;
         }
@@ -60,6 +54,9 @@
         .imageDescription {
             padding: 15px;
             text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         a {
@@ -103,7 +100,7 @@
         }
 
         #profileImage {
-            width: 100%;
+            max-width: 100%;
             height: auto;
         }
 
@@ -145,6 +142,10 @@
             .col-10 {width: 83.33%;}
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
+
+            .leftSection, .rightSection{
+                float: left;
+            }
         }
         
     </style>
@@ -157,9 +158,9 @@
                 <h1 style="font-size: 40px; margin: 30px 0 0 0; padding: 10px;">Hi! I'm <span
                         class="textColor2"><i>Rohit
                             Chaudhary</i></span></h1>
-                <h2 style="margin: 5px 10px;">Full Stack Developer <span class="textColor2"><i>&</i></span> Tech
+                <h3 style="margin: 5px 10px;">Full Stack Developer <span class="textColor2"><i>&</i></span> Tech
                     Enthusiast
-                </h2>
+                </h3>
             </section>
             <section style="padding: 10px 15px;">
                 <p>A Senior year petroleum engineering student, persuing my graduation from an Institute of National
