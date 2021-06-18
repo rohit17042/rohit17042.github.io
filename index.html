@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <html>
 
 <head>
     <title>Portfolio: @Rohit Chaudhary</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         * {
@@ -13,16 +16,16 @@
         body {
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            width: 80%;
+            width: 90%;
             margin: auto;
         }
 
-        #leftSection {
+        .leftSection {
             width: 60%;
             float: left;
         }
 
-        #rightSection {
+        .rightSection {
             width: 40%;
             float: left;
         }
@@ -35,18 +38,12 @@
             color: firebrick;
         }
 
-        .imageContainer {
-            width: 25%;
-            float: left;
-            padding: 0 5px;
-        }
-
-        .imageContainer:hover .imageGallery{
+        .imageContainer:hover .imageGallery {
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .imageContainer:hover a{
+        .imageContainer:hover a {
             text-decoration: underline;
         }
 
@@ -63,16 +60,13 @@
         .imageDescription {
             padding: 15px;
             text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
-        button{
+        button {
             padding: 10px;
             background-color: #008CBA;
             border: 1px solid transparent;
@@ -80,23 +74,23 @@
             text-align: center;
         }
 
-        button a{
+        button a {
             text-decoration: none;
             color: white;
         }
 
-        button:hover{
+        button:hover {
             background-color: white;
             color: black;
             border: 2px solid #008CBA;
         }
 
-        button:hover a{
+        button:hover a {
             color: #008CBA;
             text-decoration: none;
         }
 
-        .resumeButton{
+        .resumeButton {
             width: fit-content;
             margin: auto;
             margin-top: 30px;
@@ -108,11 +102,12 @@
             clear: both;
         }
 
-        #profileImage{
+        #profileImage {
             width: 100%;
+            height: auto;
         }
 
-        .skill{
+        .skill {
             background-color: #eee;
             display: inline-block;
             padding: 3px 8px;
@@ -120,63 +115,102 @@
             border-radius: 8px;
         }
 
-        .skill:hover{
+        .skill:hover {
             border: 1px solid transparent;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        [class*="col-"] {
+            float: left;
+            padding: 25px;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 778px){
+            
+            body{
+                width: 80%;
+            }
+
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        
     </style>
 </head>
 
 <body>
     <section id="mainContent">
-        <section id="leftSection">
+        <section class="leftSection col-8">
             <section class="textColor1" style="text-align: center;">
-                <h1 style="font-size: 40px; margin: 30px 0 0 0; padding: 10px;">Hi! I'm <span class="textColor2"><i>Rohit
-                        Chaudhary</i></span></h1>
-                <h2 style="margin: 5px 10px;">Full Stack Developer <span class="textColor2"><i>&</i></span> Tech Enthusiast
+                <h1 style="font-size: 40px; margin: 30px 0 0 0; padding: 10px;">Hi! I'm <span
+                        class="textColor2"><i>Rohit
+                            Chaudhary</i></span></h1>
+                <h2 style="margin: 5px 10px;">Full Stack Developer <span class="textColor2"><i>&</i></span> Tech
+                    Enthusiast
                 </h2>
             </section>
             <section style="padding: 10px 15px;">
                 <p>A Senior year petroleum engineering student, persuing my graduation from an Institute of National
                     Importance.</p>
                 <p>Always ready to aquire new technical skills.</p>
-                <p>Have proficiency in <span class="skill">Java</span>, <span class="skill">Object-Oriented Programming</span>, <span class="skill">DSA</span> and <span class="skill">Problem Solving</span>.</p>
-                <p>Building experience in <span class="skill">Web Development</span>. Skilled in <span class="skill">HTML</span>, <span class="skill">CSS</span> and <span class="skill">JS</span>.</p>
+                <p>Have proficiency in <span class="skill">Java</span>, <span class="skill">Object-Oriented
+                        Programming</span>, <span class="skill">DSA</span> and <span class="skill">Problem
+                        Solving</span>.</p>
+                <p>Building experience in <span class="skill">Web Development</span>. Skilled in <span
+                        class="skill">HTML</span>, <span class="skill">CSS</span> and <span class="skill">JS</span>.</p>
             </section>
             <section>
-                <section class="imageContainer">
-                    <a href="#"><section class="imageGallery">
-                        <img src="src/profileIcon.png" alt="ProfileICon" width="300px" height="200px">
-                        <div class="imageDescription">Profile</div>
-                    </section></a>
+                <section class="imageContainer col-3">
+                    <a href="#">
+                        <section class="imageGallery">
+                            <img src="src/profileIcon.png" alt="ProfileICon" width="300px" height="200px">
+                            <div class="imageDescription">Profile</div>
+                        </section>
+                    </a>
                 </section>
-                <section class="imageContainer">
-                    <a href="#"><section class="imageGallery">
-                        <img src="src/resumeIcon.webp" alt="ResumeIcon" width="300px" height="200px">
-                        <div class="imageDescription">Resume</div>
-                    </section></a>
+                <section class="imageContainer col-3">
+                    <a href="#">
+                        <section class="imageGallery">
+                            <img src="src/resumeIcon.webp" alt="ResumeIcon" width="300px" height="200px">
+                            <div class="imageDescription">Resume</div>
+                        </section>
+                    </a>
                 </section>
-                <section class="imageContainer">
-                    <a href="#"><section class="imageGallery">
-                        <img src="src/workIcon.png" alt="WorkIcon" width="300px" height="200px">
-                        <div class="imageDescription">Work</div>
-                    </section></a>
+                <section class="imageContainer col-3">
+                    <a href="#">
+                        <section class="imageGallery">
+                            <img src="src/workIcon.png" alt="WorkIcon" width="300px" height="200px">
+                            <div class="imageDescription">Work</div>
+                        </section>
+                    </a>
                 </section>
-                <section class="imageContainer">
-                    <a href="#"><section class="imageGallery">
-                        <img src="src/contactIcon.png"
-                                alt="ContactIcon" width="300px" height="200px">
-                        <div class="imageDescription">Contact</div>
-                    </section></a>
+                <section class="imageContainer col-3">
+                    <a href="#">
+                        <section class="imageGallery">
+                            <img src="src/contactIcon.png" alt="ContactIcon" width="300px" height="200px">
+                            <div class="imageDescription">Contact</div>
+                        </section>
+                    </a>
                 </section>
             </section>
             <section class="clearfix"></section>
-            <section  class="resumeButton">
+            <section class="resumeButton">
                 <button><a href="##">Download Resume</a></button>
             </section>
         </section>
-        <section id="rightSection" style="margin: 30px 0 0 0; padding: 10px">
+        <section class="rightSection col-4" style="margin: 30px 0 0 0; padding: 10px">
             <img src="src/profileImage.jpg" alt="profileImage" id="profileImage">
         </section>
     </section>
