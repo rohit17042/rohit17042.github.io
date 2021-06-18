@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Portfolio: @Rohit Chaudhary</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 80%;
+            margin: auto;
+        }
+
+        #leftSection {
+            width: 60%;
+            float: left;
+        }
+
+        #rightSection {
+            width: 40%;
+            float: left;
+        }
+
+        .textColor1 {
+            color: #034f84;
+        }
+
+        .textColor2 {
+            color: firebrick;
+        }
+
+        .imageContainer {
+            width: 25%;
+            float: left;
+            padding: 0 5px;
+        }
+
+        .imageContainer:hover .imageGallery{
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .imageContainer:hover a{
+            text-decoration: underline;
+        }
+
+        .imageGallery {
+            border: none;
+        }
+
+        .imageGallery img {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+        }
+
+        .imageDescription {
+            padding: 15px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        button{
+            padding: 10px;
+            background-color: #008CBA;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+        }
+
+        button:hover a{
+            color: #008CBA;
+            text-decoration: none;
+        }
+
+        .resumeButton{
+            width: fit-content;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #profileImage{
+            width: 100%;
+        }
+
+        .skill{
+            background-color: #eee;
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 1px;
+            border-radius: 8px;
+        }
+
+        .skill:hover{
+            border: 1px solid transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="mainContent">
+        <section id="leftSection">
+            <section class="textColor1" style="text-align: center;">
+                <h1 style="font-size: 40px; margin: 30px 0 0 0; padding: 10px;">Hi! I'm <span class="textColor2"><i>Rohit
+                        Chaudhary</i></span></h1>
+                <h2 style="margin: 5px 10px;">Full Stack Developer <span class="textColor2"><i>&</i></span> Tech Enthusiast
+                </h2>
+            </section>
+            <section style="padding: 10px 15px;">
+                <p>A Senior year petroleum engineering student, persuing my graduation from an Institute of National
+                    Importance.</p>
+                <p>Always ready to aquire new technical skills.</p>
+                <p>Have proficiency in <span class="skill">Java</span>, <span class="skill">Object-Oriented Programming</span>, <span class="skill">DSA</span> and <span class="skill">Problem Solving</span>.</p>
+                <p>Building experience in <span class="skill">Web Development</span>. Skilled in <span class="skill">HTML</span>, <span class="skill">CSS</span> and <span class="skill">JS</span>.</p>
+            </section>
+            <section>
+                <section class="imageContainer">
+                    <a href="#"><section class="imageGallery">
+                        <img src="src/profileIcon.png" alt="ProfileICon" width="300px" height="200px">
+                        <div class="imageDescription">Profile</div>
+                    </section></a>
+                </section>
+                <section class="imageContainer">
+                    <a href="#"><section class="imageGallery">
+                        <img src="src/resumeIcon.webp" alt="ResumeIcon" width="300px" height="200px">
+                        <div class="imageDescription">Resume</div>
+                    </section></a>
+                </section>
+                <section class="imageContainer">
+                    <a href="#"><section class="imageGallery">
+                        <img src="src/workIcon.png" alt="WorkIcon" width="300px" height="200px">
+                        <div class="imageDescription">Work</div>
+                    </section></a>
+                </section>
+                <section class="imageContainer">
+                    <a href="#"><section class="imageGallery">
+                        <img src="src/contactIcon.png"
+                                alt="ContactIcon" width="300px" height="200px">
+                        <div class="imageDescription">Contact</div>
+                    </section></a>
+                </section>
+            </section>
+            <section class="clearfix"></section>
+            <section  class="resumeButton">
+                <button><a href="##">Download Resume</a></button>
+            </section>
+        </section>
+        <section id="rightSection" style="margin: 30px 0 0 0; padding: 10px">
+            <img src="src/profileImage.jpg" alt="profileImage" id="profileImage">
+        </section>
+    </section>
+</body>
+
+</html>
